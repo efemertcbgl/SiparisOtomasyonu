@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FastFoodMobile.Pages.SignupPage"
+             BackgroundColor="#F7F5F4"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="20"
+                         Margin="25">
+                <Label TextColor="#CE0B06"
+                       Text="KAYIT OL"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"
+                       Margin="30,0,30,0" />
+                <Frame HasShadow="True"
+                       Padding="25"
+                       Margin="0,30,0,0">
+                    <StackLayout>
+                        <Label Text="Bir Hesap Oluştur"
+                               FontAttributes="Bold"
+                               FontSize="Title"
+                               HorizontalOptions="Center"
+                               TextColor="#CE0B06" />
+                        <Entry Placeholder="İsim ve Soyisim"
+                               PlaceholderColor="#80574D"
+                               TextColor="#80574D"
+                               x:Name="EntName"
+                               Keyboard="Text" />
+                        <Entry Placeholder="Email"
+                               PlaceholderColor="#80574D"
+                               TextColor="#80574D"
+                               x:Name="EntEmail"
+                               Keyboard="Email" />
+                        <Entry Placeholder="Şifre"
+                               PlaceholderColor="#80574D"
+                               TextColor="#80574D"
+                               IsPassword="True"
+                               x:Name="EntPassword"
+                               Keyboard="Default" />
+                        <Entry Placeholder="Şifre tekrar"
+                               PlaceholderColor="#80574D"
+                               TextColor="#80574D"
+                               IsPassword="True"
+                               x:Name="EntConfirmPassword"
+                               Keyboard="Default" />
+                        <Label Margin="20,0,20,0"
+                               FontSize="Small"
+                               HorizontalTextAlignment="Center"
+                               TextColor="#80574D"
+                               Text="Bir hesap oluşturarak, Hizmet Şartları ve Gizlilik Politikamızı kabul etmiş olursunuz." />
+                    </StackLayout>
+                </Frame>
+                <Button Text="KAYIT OL"
+                        TextColor="White"
+                        BackgroundColor="#CE0B06"
+                        x:Name="BtnSignUp"
+                        Clicked="BtnSignUp_Clicked" />
+                <Label Text="Zaten bir hesabınız mı var?"
+                       HorizontalTextAlignment="Center"
+                       TextColor="#80574D" />
+                <Button Text="Giriş yap"
+                        BackgroundColor="#CE0B06"
+                        TextColor="White"
+                        x:Name="BtnLogin"
+                        Clicked="BtnLogin_Clicked" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
