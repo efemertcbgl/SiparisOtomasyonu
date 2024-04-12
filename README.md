@@ -31,7 +31,6 @@ Sql Server Error hatasını çözmek için ilk önce Sql Server indirmeniz gerek
 #### Windows Form
 - [x] Yönetici ve Çalışan giriş ekranı
 - [x] Çalışan sipariş oluşturma
-- [ ] Çalışan gazete, radyo
 - [ ] Aşçı sipariş paneli
    - [x] Çalışanların oluşturduğu siparişin durumunu değiştirme
    - [ ] Mobil uygulamadan oluşturulan Siparişlerin durumunu değiştirme
